@@ -1,10 +1,102 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>About fe class</title>
-    </head>
-    <body>
-        <h1>About front end class</h1>
-        <p> I fee' very and good! </p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>MyPortfolio</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#demo">Demo</a></li> <!-- NEW -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- 🌙 Dark Mode Button -->
+        <button onclick="toggleDarkMode()">🌙</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Hi, I'm Veerbhadra 👋</h1>
+        <p>Frontend Developer | ECE Student | AI Enthusiast 🤖</p>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am passionate about frontend and AI development.
+            I built a real-time Sign Language Detection system using Python and OpenCV.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="card-container">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Python</div> <!-- NEW -->
+            <div class="card">OpenCV</div> <!-- NEW -->
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>AI Projects</h2>
+        <div class="card-container">
+
+            <!-- 🔥 UPDATED PROJECT -->
+            <div class="card">
+                <h3>🖐️ Sign Language Detection</h3>
+                <p>
+                    Real-time AI system that detects hand gestures and converts them into text.
+                </p>
+                <p><b>Tech:</b> Python, OpenCV, Machine Learning</p>
+
+                <!-- Buttons -->
+                <button onclick="openProject()">GitHub</button>
+                <button onclick="openLive()">Live Demo</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 🔥 NEW LIVE DEMO SECTION -->
+    <section id="demo">
+        <h2>Live AI Demo</h2>
+
+        <!-- Flask camera stream -->
+        <img src="http://127.0.0.1:5000/video" width="400">
+
+        <p>Run Python Flask backend to view live camera detection</p>
+    </section>
+
+    <!-- 🎬 VIDEO DEMO -->
+    <section>
+        <h2>Project Demo Video</h2>
+
+        <iframe width="400" height="250"
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            frameborder="0" allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <button onclick="showMessage()">Say Hello</button>
+    </section>
+
+    <script src="javascript/script.js"></script>
+</body>
 </html>
